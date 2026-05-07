@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Wynn-Baker Family </title>
+	<meta name="viewport" content= "width = device-width, initial-scale = 1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+	<link href="wbf.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="w3-container w3-blue w3-mobile w3-center">
+	  <h1>Wynn-Baker Family</h1>
+	</div>
+
+	<div class="w3-content w3-display-container">
+
+		<div class="w3-display-container mySlides">
+			<img src="img/2009.jpg" alt="2009 Group Photo" style="width:100%">
+			<div class="w3-display-bottomleft w3-large w3-container w3-padding-14 w3-black"> 2009 </div>
+		</div>
+
+		<div class="w3-display-container mySlides">	
+			<img src="img/2014.jpg" alt="2014 Group Photo" style="width:100%">
+			<div class="w3-display-bottomleft w3-large w3-container w3-padding-14 w3-black"> 2014 </div>
+		</div>
+		
+		<div class="w3-display-container mySlides">	
+			<img src="img/2024.jpg" alt="2024 Group Photo" style="width:100%">
+			<div class="w3-display-bottomleft w3-large w3-container w3-padding-14 w3-black"> 2024 </div>
+		</div>
+		
+		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+
+	<script><!--Manual Slideshow with JavaScript to select images-->
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+				}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length} ;
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+				}
+			  x[slideIndex-1].style.display = "block";
+			}
+	</script>
+
+	<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+		<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+		<a style="color:green;" href="wbfhome.html" class="w3-bar-item w3-button">Home</a>
+		<a style="color:green;" href="wbfhistory.html" class="w3-bar-item w3-button">Family Reunion History</a>
+		<a style="color:green;" href="wbfofficers.html" class="w3-bar-item w3-button">Family Reunion Officers</a>
+		<a style="color:green;" href="wbfreunion.html" class="w3-bar-item w3-button">Reunion Info</a>
+		<a style="color:green;" href="wbfphotos.html" class="w3-bar-item w3-button">Photo Gallery</a>
+		<a style="color:green;" href="mailto:president@wynnbakerfamily.org" class="w3-bar-item w3-button">Contact Us</a>
+	</div>
+
+	<div class="w3-main" style="margin-left:200px">
+		<div class="w3-green">
+		  <button class="w3-button w3-green w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+		  <div class="w3-container">
+			<h1>Reunion Info</h1>
+			<h2> Correspondence </h2>
+			<div class="w3-container">
+				<a href="https://mymga-my.sharepoint.com/:i:/g/personal/vanessa_wynn_mga_edu/IQD5F_6W5q_aS60S34HJaxcTAZNJYTPlIMWeJgGfhynIgJQ?e=dfVX2g"
+				target="_blank">
+				<figure> <img src="img/Letter_20260301.jpg" alt="March 1st Letter"  class="w3-image" width="300" height="500"> </figure> </a>
+				
+				<a href="https://mymga-my.sharepoint.com/:i:/g/personal/vanessa_wynn_mga_edu/IQDGAWQK3u8kT503JGzBrodPAdwBHrwgJM3DQSPGzO8QCAg?e=pYyAoI"
+				target="_blank">
+				<figure> <img src="img/Letter_20260418.jpg" alt="April 18th Letter"  class="w3-image" width="300" height="500"> </figure> </a>
+				
+				<a href="https://mymga-my.sharepoint.com/:i:/g/personal/vanessa_wynn_mga_edu/IQA5n1k-ri3zQYIv9AQ58qgFAWqBlJgTxScuJNJclzVTBXE?e=bN2IIS"
+				target="_blank">
+				<figure> <img src="img/Letter_20260428.jpg" alt="April 28th Letter"  class="w3-image" width="300" height="500"> </figure> </a>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<script><!--Collapsible Responsive Side Navigation-->
+		function w3_open() {
+		  document.getElementById("mySidebar").style.display = "block";
+		}
+
+		function w3_close() {
+		  document.getElementById("mySidebar").style.display = "none";
+		}
+	</script>
+
+-->
+<footer class="w3-container w3-blue w3-center">
+	<p> Quick Links </p>
+	<a href="https://forms.gle/URkCrX71hJNruEtj7" target="_blank" class="w3-button w3-red" > Join Our Contact List </a>
+	<a href="https://forms.gle/fyAzSE7w4mcckufY7" target="_blank" class="w3-button w3-red" > Family Tree Info </a>
+</footer>
+</body>
+</html>
+
+
